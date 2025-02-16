@@ -1,0 +1,18 @@
+{
+  "name": "my-web-app",
+  "version": "1.0.0",
+  "description": "A web application with a Node.js backend and a React frontend.",
+  "main": "backend/src/app.js",
+  "scripts": {
+    "start": "node backend/src/app.js",
+    "backend": "cd backend && npm install && npm start",
+    "frontend": "cd frontend && npm install && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "MIT"
+}
